@@ -1,0 +1,59 @@
+/* Page background + basic text */
+html, body {
+  margin: 0;
+  height: 100%;
+  background-color: #111;
+  background-image: url('../img/background_pic.png');  
+  background-size: cover;
+  background-position: center;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+/* Header */
+.site-header {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #fff;
+}
+
+/* Main card */
+.card {
+  max-width: 700px;
+  margin: 2rem auto;
+  background: rgba(255,255,255,0.92);
+  padding: 1.25rem;
+  border-radius: 14px;
+  box-shadow: 0 12px 28px rgba(0,0,0,.2);
+}
+
+/* Attempts/Wins/Losses row */
+.hud { margin-bottom: 1rem; }
+
+/* Input + buttons row */
+.controls {
+  display: flex;
+  gap: .5rem;
+}
+
+/* Inputs and buttons */
+input[type="number"] {
+  padding: .7rem .9rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+button {
+  padding: .7rem 1rem;
+  border: none;
+  border-radius: 10px;
+  background: #ff9800;
+  color: #1e1e1e;
+  cursor: pointer;
+}
+
+button:hover { filter: brightness(.9); }
+
+/* Game state bits */
+#resetBtn { display: none; }
+.feedback { min-height: 1.5rem; margin-top: .5rem; }
+.prev { margin-top: .5rem; }
